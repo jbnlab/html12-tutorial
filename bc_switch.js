@@ -21,7 +21,7 @@ window.addEventListener("load", setupStyles);
 
 function setupStyles() {
    // Create a link element for the page view styles
-   var pageStyle = document.createElement("link");
+   const pageStyle = document.createElement("link");
    pageStyle.setAttribute("href", "bc_page.css");
    pageStyle.setAttribute("rel", "stylesheet");
    pageStyle.setAttribute("disabled", "disabled");
@@ -31,14 +31,14 @@ function setupStyles() {
    pageStyle.disabled = true;
 
    // Insert buttons for the style switcher
-   var buttonDIV = document.createElement("div");
+   const buttonDIV = document.createElement("div");
    buttonDIV.setAttribute("id", "styleButtons");
 
-   var webButton = document.createElement("input");
+   const webButton = document.createElement("input");
    webButton.setAttribute("type", "button");
    webButton.setAttribute("value", "Web View");
 
-   var pageButton = document.createElement("input");
+   const pageButton = document.createElement("input");
    pageButton.setAttribute("type", "button");
    pageButton.setAttribute("value", "Page View");
 
@@ -48,7 +48,7 @@ function setupStyles() {
    document.body.insertBefore(buttonDIV, document.body.firstChild);
 
    // Append an embedded style sheet to the document head
-   var buttonStyles = document.createElement("style");
+   const buttonStyles = document.createElement("style");
    document.head.appendChild(buttonStyles);
 
    // Add style rules to the embedded style sheet
